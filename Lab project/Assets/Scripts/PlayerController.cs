@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.log("Player has collided with enemy.");
+            Debug.Log("Player has collided with enemy.");
         }
     }
 
