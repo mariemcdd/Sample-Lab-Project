@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if(collision.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Player has collided with enemy.");
         }
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Powerup"))
+        if(other.gameObject.CompareTag("Powerup"))
         {
             Destroy(other.gameObject);
         }
